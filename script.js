@@ -97,3 +97,7 @@ function showImage() {
     const weatherIcon = document.getElementById('weather-icon');
     weatherIcon.style.display = 'block'; // Make the image visible once it's loaded
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const btn = document.getElementById('btn');
+    btn.addEventListener('click', getWeather)
+})
